@@ -1,2 +1,2 @@
-# angularjs-lynda
-AngularJS theme for Lynda Course
+# angular-spa
+One Page Theme using WP and AngularJS
