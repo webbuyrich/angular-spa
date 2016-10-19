@@ -30,6 +30,12 @@
                     Add a scope page title and add Posts.query funciton that uses res as the input set $scope.posts equal 
                     to the res input from the function.</p>
             </div>
+            <div class="panel">
+                <h1>2. Add Template</h1>
+                <p>Create a new folder named templates. Add a file named list.html inside templates folder. Use h1 tag 
+                    to display page title that was defined in the controller. use pre and code to view all posts code
+                    and using {posts | json}</p>
+            </div>
         </div>
         <script src="js/main.js"></script>
     </body>

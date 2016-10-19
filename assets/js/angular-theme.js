@@ -11,7 +11,8 @@ wpApp.factory( 'Posts', function( $resource ){
 wpApp.controller('ListController', ['$scope', 'Posts', function($scope, Posts){
 	console.log('ListController');
 	$scope.page_title = 'Blog Listing';
-	Posts.query(function(res)){
+	Posts.query(function(res){
 		$scope.posts = res;
-	}
-}])
+	});
+}]);
+
