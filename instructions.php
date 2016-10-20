@@ -42,6 +42,12 @@
                     syntax to set the name, url, controller, and templateUrl. Also add urlRouterProvider.otherwise and set it
                     to '/' to go to the homepage if an error occurs</p>
             </div>
+            <div class="panel">
+                <h1>8. Use ng-repeat to display posts</h1>
+                <p>create an article div on list.html. inside the article display post.title.rendered and post.conent.rendered.
+                    add a filter in angular-theme.js that uses $sce and create a function that returns the text with
+                    the syntax return $sce.trustAsHtml( text );</p>
+            </div>
         </div>
         <script src="js/main.js"></script>
     </body>
