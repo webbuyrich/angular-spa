@@ -48,6 +48,12 @@
                     add a filter in angular-theme.js that uses $sce and create a function that returns the text with
                     the syntax return $sce.trustAsHtml( text );</p>
             </div>
+            <div class="panel">
+                <h1>9. Create single post view</h1>
+                <p>Create new state similar to list and name it detail, set template url to a new detail.html file you need to
+                    create. Create a new controller named detailcontroller. Add scope stateparams and posts to the controller.
+                    Use stateparams to get id of post.</p>
+            </div>
         </div>
         <script src="js/main.js"></script>
     </body>

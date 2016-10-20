@@ -16,6 +16,13 @@ wpApp.controller( 'ListController', ['$scope', 'Posts', function( $scope, Posts 
 	
 }]);
 
+wpApp.controller('DetailsController', ['$scope', '$stateParams', 'Posts', function($scope, $stateParams, Posts){
+	console.log( $stateParams );
+	Posts.get( {ID:$stateParams.id}, function ( res ){
+		$scope.post = res;
+	});
+}]);
+
 wpApp.config( function( $stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise('/');
 	$stateProvider
@@ -23,7 +30,12 @@ wpApp.config( function( $stateProvider, $urlRouterProvider){
 			url: '/',
 			controller: 'ListController',
 			templateUrl: appInfo.template_directory + 'templates/list.html'
-		});
+		})
+		.state('detail',{
+			url:'/posts/:id',
+			controller: 'DetailsController',
+			templateUrl: appInfo.template_directory + 'templates/detail.html'
+		})
 });
 
 wpApp.filter('to_trusted', ['$sce', function($sce){
